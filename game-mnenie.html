@@ -1,0 +1,358 @@
+<html>
+<head><title>Любимые игры</title></head>
+<body style="background-image: url('');">
+<p align="center"><font color='red'; size='8'>Список моих любимых игр и мой отзыв</font></p>
+<table border='2'; bgcolor='pink'>
+<tr>
+<td colspan='5'>Игры</td>
+</tr>
+<tr>
+<td>Название</td>
+<td>Сюжет</td>
+<td>Персонажи</td>
+<td>Карта</td>
+<td>Локации</td>
+</tr>
+<tr>
+<td>Ведьмак</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>KCD</td>
+<td>7</td>
+<td>6</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Киберпанк</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Хогвартс наследие</td>
+<td>6</td>
+<td>5</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Ассасинс крид Вальгалла</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</table>
+<br>
+<IMG src='3.jpg'>
+<h2>Ведьмак 3</h2>
+<font size='3'>Данную игру я проходил 2 раза. Она мне очень понравилась. Сюжет очень интереный и захватывающий. Мир, ох мир. Про него можно очень много говорить. Мир здесь очень большой и интересный куда не ступи что то новое</font>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .comment-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .comment-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #45a049;
+        }
+        .comments-list {
+            margin-top: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .comment-author {
+            font-weight: bold;
+            color: #333;
+        }
+        .comment-date {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .comment-text {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Здесь вы можете оставить комментарий по поводу своего прохождения и мнения по данной игре</h3>
+    
+    <div class="comment-form">
+        <form id="commentForm">
+            <input type="text" id="name" name="name" placeholder="Ваше имя или никнейм" required>
+            <textarea id="comment" name="comment" rows="5" placeholder="Ваш комментарий" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <div class="comments-list" id="commentsList">
+        <!-- Здесь будут появляться комментарии -->
+    </div>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Получаем значения из формы
+            const name = document.getElementById('name').value;
+            const commentText = document.getElementById('comment').value;
+            const date = new Date().toLocaleString();
+            
+            // Создаем HTML для нового комментария
+            const commentHTML = `
+                <div class="comment">
+                    <div class="comment-author">${name}</div>
+                    <div class="comment-date">${date}</div>
+                    <div class="comment-text">${commentText}</div>
+                </div>
+            `;
+            
+            // Добавляем комментарий в список
+            document.getElementById('commentsList').insertAdjacentHTML('beforeend', commentHTML);
+            
+            // Очищаем форму
+            document.getElementById('commentForm').reset();
+        });
+    </script>
+</body>
+<br>
+<IMG src='4.jpg'>
+<h2>Ассасинс крид Вальгалла</h2>
+<font size='3'>Играл первый раз. Потратил на полное прохождение(100%) около 200 часов. Игра очень сильно захватывает смоим миром и сюжетом. Очень интересные доп. задания. Мир также не отстаёт(самый большой игровой мир в котором я когда либо был)</font>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .comment-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .comment-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #45a049;
+        }
+        .comments-list {
+            margin-top: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .comment-author {
+            font-weight: bold;
+            color: #333;
+        }
+        .comment-date {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .comment-text {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Здесь вы можете оставить комментарий по поводу своего прохождения и мнения по данной игре</h3>
+    
+    <div class="comment-form">
+        <form id="commentForm">
+            <input type="text" id="name" name="name" placeholder="Ваше имя или никнейм" required>
+            <textarea id="comment" name="comment" rows="5" placeholder="Ваш комментарий" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <div class="comments-list" id="commentsList">
+        <!-- Здесь будут появляться комментарии -->
+    </div>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Получаем значения из формы
+            const name = document.getElementById('name').value;
+            const commentText = document.getElementById('comment').value;
+            const date = new Date().toLocaleString();
+            
+            // Создаем HTML для нового комментария
+            const commentHTML = `
+                <div class="comment">
+                    <div class="comment-author">${name}</div>
+                    <div class="comment-date">${date}</div>
+                    <div class="comment-text">${commentText}</div>
+                </div>
+            `;
+            
+            // Добавляем комментарий в список
+            document.getElementById('commentsList').insertAdjacentHTML('beforeend', commentHTML);
+            
+            // Очищаем форму
+            document.getElementById('commentForm').reset();
+        });
+    </script>
+<br>
+<IMG src='5.jpg'>
+<h2>KCD</h2>
+<font size='3'>Играл также в первый раз. По началу игра вообще не нравилась, ну было вообще не моё, но потом распробовал, разыгрался и вродебы как пошло. Боевыая система это главное отличие этой игры от любой другой(одна из самых сложных во всех играх в которые я играл). Мир очень красивый и живой. Сюжет также очень интересный.</font>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .comment-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .comment-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #45a049;
+        }
+        .comments-list {
+            margin-top: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .comment-author {
+            font-weight: bold;
+            color: #333;
+        }
+        .comment-date {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .comment-text {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Здесь вы можете оставить комментарий по поводу своего прохождения и мнения по данной игре</h3>
+    
+    <div class="comment-form">
+        <form id="commentForm">
+            <input type="text" id="name" name="name" placeholder="Ваше имя или никнейм" required>
+            <textarea id="comment" name="comment" rows="5" placeholder="Ваш комментарий" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <div class="comments-list" id="commentsList">
+        <!-- Здесь будут появляться комментарии -->
+    </div>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Получаем значения из формы
+            const name = document.getElementById('name').value;
+            const commentText = document.getElementById('comment').value;
+            const date = new Date().toLocaleString();
+            
+            // Создаем HTML для нового комментария
+            const commentHTML = `
+                <div class="comment">
+                    <div class="comment-author">${name}</div>
+                    <div class="comment-date">${date}</div>
+                    <div class="comment-text">${commentText}</div>
+                </div>
+            `;
+            
+            // Добавляем комментарий в список
+            document.getElementById('commentsList').insertAdjacentHTML('beforeend', commentHTML);
+            
+            // Очищаем форму
+            document.getElementById('commentForm').reset();
+        });
+    </script>
+</body>
+</html>
